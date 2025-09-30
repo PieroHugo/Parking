@@ -1,39 +1,100 @@
 {
-  "toolbar": {
-    "title": "Heartland Dental",
-    "languages": {
-      "en": "EN",
-      "es": "ES"
+  "NAV": {
+    "DASHBOARD": "Dashboard",
+    "PARKING": "Parking",
+    "SPACES": "Spaces",
+    "SUBSCRIPTIONS": "Subscriptions",
+    "CLIENTS": "Clients",
+    "REPORTS": "Reports"
+  },
+  "IAM": {
+    "LOGIN": {
+      "TITLE": "Welcome back",
+      "SUBTITLE": "Access your EasyPark operator account",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "ACTION": "Sign in"
+    },
+    "REGISTER": {
+      "TITLE": "Create your account",
+      "SUBTITLE": "Register to manage your parking operations",
+      "NAME": "Full name",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "ROLE": "Select a role",
+      "ROLE_PLACEHOLDER": "Choose a role",
+      "ACTION": "Create account"
     }
   },
-  "catalogue": {
-    "title": "Dental Health Centers Catalogue",
-    "subtitle": "Explore state-of-the-art Heartland Dental health centers and find the care location that best suits your needs.",
-    "loading": "Loading dental centers...",
-    "instructions": "Please verify your API configuration",
-    "empty": "No dental centers are available at the moment.",
-    "errors": {
-      "load": "We could not load the dental centers at this time."
+  "PROFILES": {
+    "OVERVIEW": {
+      "TITLE": "Profile overview",
+      "DESCRIPTION": "Manage identity, notification preferences and business data for each EasyPark user."
     },
-    "notifications": {
-      "shared": "Dental center {{name}} shared successfully.",
-      "copied": "Link for {{name}} copied to clipboard.",
-      "error": "Unable to share this dental center."
+    "DETAILS": {
+      "TITLE": "Account details",
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "NO_PHONE": "Not provided"
     },
-    "card": {
-      "details": "Dental center details",
-      "address": "Address",
-      "contact": "Contact",
-      "phone": "Phone",
-      "email": "Email",
-      "coordinates": "Coordinates",
-      "website": "Website",
-      "goTo": "Go To Health Center",
-      "share": "Share Resource"
+    "SETTINGS": {
+      "TITLE": "Preferences",
+      "DESCRIPTION": "Configure alerts, notifications and accessibility options."
+    },
+    "BUSINESS": {
+      "TITLE": "Business information",
+      "DESCRIPTION": "Connect tax data and invoicing preferences for corporate accounts."
     }
   },
-  "footer": {
-    "copyright": "Copyright © 2025 Heartland Dental. All rights reserved.",
-    "developedBy": "Developed by Piero Elescano"
+  "MONITORING": {
+    "DASHBOARD": {
+      "TITLE": "Parking lot overview",
+      "HEADLINE": "Real-time insights",
+      "DESCRIPTION": "Review status, revenue and incidents to keep EasyPark operations under control.",
+      "OCCUPANCY": "Occupancy rate",
+      "REVENUE": "Total revenue",
+      "INCIDENTS": "Incidents",
+      "RECENT_INCIDENTS": "Recent incidents",
+      "TIME": "Time",
+      "LOCATION": "Location",
+      "DESCRIPTION": "Description",
+      "STATUS": "Status",
+      "ENTRY_EXIT": "Latest vehicle movements"
+    },
+    "INCIDENTS": {
+      "TITLE": "Incident management",
+      "DESCRIPTION": "Track, classify and resolve operational incidents inside your parking facility.",
+      "CREATE": "Register new incident",
+      "LOCATION": "Location",
+      "DESCRIPTION": "Description",
+      "SUBMIT": "Submit incident"
+    }
+  },
+  "SUBSCRIPTION": {
+    "OVERVIEW": {
+      "TITLE": "Subscriptions",
+      "DESCRIPTION": "Control customer plans, renewals and pricing models."
+    },
+    "CARD": {
+      "MONTH": "month",
+      "RENEWS": "Renews on {{date}}"
+    },
+    "SELECTOR": {
+      "TITLE": "Available plans"
+    }
+  },
+  "ANALYTICS": {
+    "OVERVIEW": {
+      "TITLE": "Analytics",
+      "DESCRIPTION": "Visualize KPIs and export reports for strategic decisions."
+    },
+    "GRAPH": {
+      "TITLE": "Revenue trend",
+      "PLACEHOLDER": "Graph placeholder"
+    },
+    "EXPORT": {
+      "TITLE": "Export reports"
+    }
   }
 }
