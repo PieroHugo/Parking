@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" role="banner" class="app-toolbar">
+  <div class="app-toolbar__brand" aria-label="Heartland Dental brand">
+    <img
+      [src]="logoUrl()"
+      alt="Heartland Dental logo"
+      class="app-toolbar__logo"
+      width="48"
+      height="48"
+    />
+    <span class="app-toolbar__title" translate="toolbar.title"></span>
+  </div>
+  <span class="app-toolbar__spacer" aria-hidden="true"></span>
+  <mat-button-toggle-group
+    class="app-toolbar__languages"
+    appearance="legacy"
+    [value]="selectedLanguage()"
+    (change)="onLanguageChange($event)"
+    aria-label="Select interface language"
+  >
+    <mat-button-toggle *ngFor="let language of languages()" [value]="language">
+      {{ ('toolbar.languages.' + language) | translate }}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>

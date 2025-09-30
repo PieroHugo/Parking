@@ -1,0 +1,39 @@
+{
+  "toolbar": {
+    "title": "Heartland Dental",
+    "languages": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "catalogue": {
+    "title": "Catálogo de Centros de Salud Dental",
+    "subtitle": "Explore los centros de salud dental de Heartland Dental y encuentre el lugar de atención que mejor se adapte a sus necesidades.",
+    "loading": "Cargando centros dentales...",
+    "instructions": "Verifique la configuración del API.",
+    "empty": "No hay centros dentales disponibles en este momento.",
+    "errors": {
+      "load": "No fue posible cargar los centros dentales en este momento."
+    },
+    "notifications": {
+      "shared": "Centro dental {{name}} compartido correctamente.",
+      "copied": "Enlace de {{name}} copiado al portapapeles.",
+      "error": "No es posible compartir este centro dental."
+    },
+    "card": {
+      "details": "Detalles del centro dental",
+      "address": "Dirección",
+      "contact": "Contacto",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "coordinates": "Coordenadas",
+      "website": "Sitio web",
+      "goTo": "Ir al centro de salud",
+      "share": "Compartir recurso"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Heartland Dental. Todos los derechos reservados.",
+    "developedBy": "Desarrollado por Piero Elescano"
+  }
+}

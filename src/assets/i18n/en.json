@@ -1,0 +1,39 @@
+{
+  "toolbar": {
+    "title": "Heartland Dental",
+    "languages": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "catalogue": {
+    "title": "Dental Health Centers Catalogue",
+    "subtitle": "Explore state-of-the-art Heartland Dental health centers and find the care location that best suits your needs.",
+    "loading": "Loading dental centers...",
+    "instructions": "Please verify your API configuration",
+    "empty": "No dental centers are available at the moment.",
+    "errors": {
+      "load": "We could not load the dental centers at this time."
+    },
+    "notifications": {
+      "shared": "Dental center {{name}} shared successfully.",
+      "copied": "Link for {{name}} copied to clipboard.",
+      "error": "Unable to share this dental center."
+    },
+    "card": {
+      "details": "Dental center details",
+      "address": "Address",
+      "contact": "Contact",
+      "phone": "Phone",
+      "email": "Email",
+      "coordinates": "Coordinates",
+      "website": "Website",
+      "goTo": "Go To Health Center",
+      "share": "Share Resource"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Heartland Dental. All rights reserved.",
+    "developedBy": "Developed by Piero Elescano"
+  }
+}

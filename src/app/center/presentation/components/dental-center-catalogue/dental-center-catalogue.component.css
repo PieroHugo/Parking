@@ -1,0 +1,48 @@
+.catalogue {
+  padding: 2rem clamp(1rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.catalogue__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.catalogue__subtitle {
+  color: #475569;
+  margin: 0;
+  max-width: 720px;
+}
+
+.catalogue__loader,
+.catalogue__error,
+.catalogue__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  text-align: center;
+}
+
+.catalogue__error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  flex-direction: column;
+}
+
+.catalogue__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.catalogue__grid > div {
+  height: 100%;
+}

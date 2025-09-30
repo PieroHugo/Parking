@@ -1,0 +1,43 @@
+.app-toolbar {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-toolbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.app-toolbar__logo {
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem;
+}
+
+.app-toolbar__title {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-toolbar__spacer {
+  flex: 1;
+}
+
+.app-toolbar__languages {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+
+.app-toolbar__languages .mat-button-toggle {
+  color: #fff;
+}
+
+.app-toolbar__languages .mat-button-toggle.mat-button-toggle-checked {
+  background-color: rgba(255, 255, 255, 0.25);
+}

@@ -1,0 +1,83 @@
+<mat-card class="center-card" role="article" [attr.aria-label]="center.name">
+  <img
+    mat-card-image
+    [src]="center.imageUrl"
+    [alt]="center.name + ' exterior view'"
+    loading="lazy"
+    decoding="async"
+  />
+  <mat-card-header>
+    <mat-card-title>{{ center.name }}</mat-card-title>
+    <mat-card-subtitle>{{ center.city }}, {{ center.state }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="center-card__description">{{ center.description }}</p>
+    <dl class="center-card__details" aria-label="{{ 'catalogue.card.details' | translate }}">
+      <div>
+        <dt translate="catalogue.card.address"></dt>
+        <dd>{{ center.fullAddress }}</dd>
+      </div>
+      <div>
+        <dt translate="catalogue.card.contact"></dt>
+        <dd>
+          <a
+            [href]="'tel:' + center.phone"
+            class="center-card__link"
+            [attr.aria-label]="('catalogue.card.phone' | translate) + ' ' + center.phone"
+          >
+            {{ center.phone }}
+          </a>
+          <span aria-hidden="true" class="center-card__divider">·</span>
+          <a
+            [href]="'mailto:' + center.email"
+            class="center-card__link"
+            [attr.aria-label]="('catalogue.card.email' | translate) + ' ' + center.email"
+          >
+            {{ center.email }}
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt translate="catalogue.card.coordinates"></dt>
+        <dd>{{ center.latitude }}, {{ center.longitude }}</dd>
+      </div>
+      <div *ngIf="center.website">
+        <dt translate="catalogue.card.website"></dt>
+        <dd>
+          <a
+            [href]="center.website"
+            class="center-card__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="('catalogue.card.website' | translate) + ' ' + center.website"
+          >
+            {{ center.website }}
+          </a>
+        </dd>
+      </div>
+    </dl>
+  </mat-card-content>
+  <mat-card-actions class="center-card__actions">
+    <a
+      mat-flat-button
+      color="primary"
+      [href]="center.buildGoogleMapsUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+      (click)="$event.stopPropagation()"
+      [attr.aria-label]="('catalogue.card.goTo' | translate) + ' ' + center.name"
+    >
+      <mat-icon aria-hidden="true">place</mat-icon>
+      <span translate="catalogue.card.goTo"></span>
+    </a>
+    <button
+      mat-stroked-button
+      type="button"
+      (click)="share($event)"
+      [attr.aria-label]="('catalogue.card.share' | translate) + ' ' + center.name"
+    >
+      <mat-icon aria-hidden="true">share</mat-icon>
+      <span translate="catalogue.card.share"></span>
+    </button>
+  </mat-card-actions>
+</mat-card>
